@@ -9,21 +9,97 @@
 </head>
 <body>
     <header>
-        <h1>Ficha Genérica - versão 1.0.3</h1>
-        Visite nosso servidor do <a href="https://discord.com/invite/3vtTnh3" target="_blank">Discord</a>
-    </header>
-    <main>
-        <section>
-            <div>
+        <section id="header-p">
+            <h1 id="head-h1">Ficha Genérica - versão 1.0.3</h1>
+            <p id="head-disc">Visite nosso servidor do <a href="https://discord.com/invite/3vtTnh3" target="_blank">Discord</a></p>
+
+        </section>
+        <section id="head1">
+            <div id="h-nome">
                 <p>
                     Nome: <input type="text">
                 </p>
-                <p>Divida 5 pontos entre os três atrubutos, min 0, max 3.</p>
+                
+            </div>
+            <div id="h-status">
+                <p class="leg" ><small></small></p>
                 <p>
-                    <abbr title="Corpo">COR:</abbr> <input type="number" value="0" class="entrada-menor">  <abbr title="Mente/Dextreza">MEN/DEX</abbr>: <input type="number" value="0" class="entrada-menor">  <abbr title="Espirito">ESP</abbr>: <input type="number" value="0" min="0" max="3" class="entrada-menor">
+                    <abbr title="Corpo">COR:</abbr> <input type="number" value="0" min="0" max="3" class="entrada-menor">  <abbr title="Mente/Dextreza">MEN/DEX:</abbr> <input type="number" value="0" min="0" max="3" class="entrada-menor">  <abbr title="Espirito">ESP:</abbr> <input type="number" value="0" min="0" max="3" class="entrada-menor">
+                    <abbr title="Divida 5 pontos entre os três atrubutos, min 0, max 3.">&quest;</abbr>
                 </p>
             </div>
+            <div id="h-vida">
+                Vida: 
+                <div><p>Atual</p> <input type="number" value="10" name="vida-a" id="vida-a" class="entrada-menor"></div> <div><p>Base</p> <input type="number" value="10" name="vida-b" id="vida-b" class="entrada-menor"></div>  <abbr title="Vida Inicial 10, a cada 1 ponto em COR receba + 3 na vida base">&quest;</abbr>
+            </div>
         </section>
+        
+    </header>
+    <main>
+        <div>
+           <div class="pontos"><h2>Combate:</h2> <div ><small>Pnts.</small> <input type="number" name="comb" id="comb" class="entrada-menor" value="-2" min="-3" max="1"></div><div id="comb-t"><small>Total</small> <strong>-2</strong></div></div>
+           <div>
+            <p>[COR]Luta: + <input type="number" name="luta" id="luta" class="pericia"></p>
+            <p>[COR] Bloqueio/Escudo: + <input type="number" name="bloq" id="bloq" class="pericia"></p>
+            <p>[COR] Arma de Contusão: + <input type="number" name="cont" id="cont" class="pericia"></p>
+            <p>[MEN/DEX] Golpe Sujo: + <input type="number" name="sujo" id="sujo" class="pericia"></p>
+            <p>[MEN/DEX] Esquiva: + <input type="number" name="esq" id="esq" class="pericia"></p>
+            <p>[MEN/DEX] Arma de Perfuração: + <input type="number" name="perf" id="perf" class="pericia"></p>
+            <p>[MEN/DEX] Mira/Precisão: + <input type="number" name="mira" id="mira" class="pericia"></p>
+            <p>[ESP] Arma de Corte: + <input type="number" name="cort" id="cort" class="pericia"></p>
+           </div>
+           
+
+        </div>
+        <div >
+            <div class="pontos"><h2>Movimento:</h2> <div ><small>Pnts.</small> <input type="number" name="mov" id="mov" class="entrada-menor" value="-2" min="-3" max="1"></div><div id="comb-t"><small>Total</small> <strong>-2</strong></div></div>
+           <div>
+            <p>[COR]Escalada: + <input type="number" name="esca" id="esca" class="pericia"></p>
+            <p>[COR] Natação: + <input type="number" name="nat" id="nat" class="pericia"></p>
+            <p>[COR] Salto: + <input type="number" name="salto" id="salto" class="pericia"></p>
+            <p>[COR] Corrida: + <input type="number" name="corrida" id="corrida" class="pericia"></p>
+            <p>[MEN/DEX] Condução/Montaria: + <input type="number" name="condu" id="condu" class="pericia"></p>
+            <p>[MEN/DEX] Furtividade: + <input type="number" name="furt" id="furt" class="pericia"></p>
+            <p>[MEN/DEX] Iniciativa: + <input type="number" name="inic" id="inic" class="pericia"></p>
+            <p>[ESP] Direção Intuitiva: + <input type="number" name="direc" id="direc" class="pericia"></p>
+           </div>
+        </div>
+        <div >
+            <div class="pontos"><h2>Sobrevivência:</h2> <div ><small>Pnts.</small> <input type="number" name="sob" id="sob" class="entrada-menor" value="-2" min="-3" max="1"></div><div id="comb-t"><small>Total</small> <strong>-2</strong></div></div>
+            <div>
+             <p>[MEN/DEX] Caçar: + <input type="number" name="caçar" id="caçar" class="pericia"></p>
+             <p>[MEN/DEX] Localizar: + <input type="number" name="loc" id="loc" class="pericia"></p>
+             <p>[MEN/DEX] Noção do Tempo: + <input type="number" name="time" id="time" class="pericia"></p>
+             <p>[MEN/DEX] Camuflagem: + <input type="number" name="camu" id="camu" class="pericia"></p>
+             <p>[ESP] Perceber: + <input type="number" name="perceb" id="perceb" class="pericia"></p>
+             <p>[ESP] Acampamento: + <input type="number" name="acamp" id="acamp" class="pericia"></p>
+             <p>[ESP] Rastreamentorast: + <input type="number" name="rast" id="rast" class="pericia"></p>
+             <p>[ESP] Primeiros Socorros: + <input type="number" name="help" id="help" class="pericia"></p>
+            </div>
+        </div>
+        <div >
+            <div class="pontos"><h2>Social:</h2> <div ><small>Pnts.</small> <input type="number" name="social" id="social" class="entrada-menor" value="-2" min="-3" max="1"></div><div id="comb-t"><small>Total</small> <strong>-2</strong></div></div>
+            <div>
+             <p>[COR] Intimidação Fisica: + <input type="number" name="intimf" id="intf" class="pericia"></p>
+             <p>[MEN/DEX] Intimidação Mental: + <input type="number" name="intm" id="intm" class="pericia"></p>
+             <p>[MEN/DEX] Roubar/Ocultar: + <input type="number" name="roub" id="roub" class="pericia"></p>
+             <p>[MEN/DEX] Lábia/Dissimulação: + <input type="number" name="labia" id="labia" class="pericia"></p>
+             <p>[MEN/DEX] Disfarcedisf: + <input type="number" name="disf" id="disf" class="pericia"></p>
+             <p>[ESP] Carisma: + <input type="number" name="cari" id="cari" class="pericia"></p>
+             <p>[ESP] Diplomacia: + <input type="number" name="dip" id="dip" class="pericia"></p>
+             <p>[ESP] Motivar/Liderar: + <input type="number" name="moti" id="moti" class="pericia"></p>
+            </div>
+        </div>
+        <div>
+            <div class="pontos"><h2>Oculto:</h2> <div ><small>Pnts.</small> <input type="number" name="ocul" id="ocul" class="entrada-menor" value="-2" min="-3" max="1"></div><div id="comb-t"><small>Total</small> <strong>-2</strong></div></div>
+            <div>
+             <p>[COR] Persistência: + <input type="number" name="pers" id="pers" class="pericia"></p>
+             <p>[ESP] Vontade: + <input type="number" name="von" id="von" class="pericia"></p>
+             <p>[ESP] Confiança/Fé: + <input type="number" name="fe" id="fe" class="pericia"></p>
+             <p>[ESP] Sanidade: + <input type="number" name="sani" id="sani" class="pericia"></p>
+            </div>
+
+        </div>
     </main>
 </body>
 </html>

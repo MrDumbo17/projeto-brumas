@@ -1,6 +1,165 @@
 @charset "UTF-8";
 
-.entrada-menor{
-    width: 30px;
+:root{
+
+    --fontP: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input::-webkit-outer-spin-button,   input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+}
+
+*{
+    margin: 0px;
+}
+
+
+body {
+    
+    background-color: lightgrey;
+}
+
+input{
+    font: bold 1em san-serife;
+    color: white;
+    background-color: gray;
+}
+abbr{
+    text-decoration: none;
+}
+/* Cabeçario de Apresentação */
+#header-p {
+    margin: 10px;
     text-align: center;
+}
+
+#head-disc {
+    display: inline-block;
+    font: italic normal .8em arial;
+
+}
+
+/* Cabeçario parte 2*/
+#head1 {
+    width: 600px;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+    padding-top: 15px;
+
+}
+
+/* Cabeçario nome*/
+#h-nome > p {
+
+    font: bold 1em var(--fontP);
+    
+}
+#h-nome input {
+    width: 250px;
+}
+/* Cabeçario Status*/
+#h-status abbr {
+    margin-top: 10px;
+    text-decoration: none;
+    font: bold 1em var(--fontP);
+}
+
+
+#head-h1 {
+    display: inline-block;
+    margin-right: 20px;
+    font-family: monospace;
+
+}
+
+/* Cabeçario Vida*/
+
+#h-vida {
+    font: bold 1em var(--fontP);
+    margin-top: 2px ;
+}
+
+#h-vida div {
+    display: inline-block;
+    
+    
+}
+#h-vida > div > p {
+    text-align: center;
+    font: italic  .6em sans-serif;
+}
+#h-vida input {
+    display: block;
+}
+#h-vida > p {
+    margin: 1px;
+    text-align: center;
+    font: normal normal .8em serif;
+    width: 180px;
+    margin: auto;
+
+}
+
+main{
+    width: 600px;
+    margin: auto;
+    background-color: white;
+    text-align: justify;
+    border-radius: 0px 0px 20px 20px;
+}
+main > div {
+    margin: 10px;
+    display: inline-block;
+    text-align: right;
+    width: 270px;
+    
+}
+
+.leg {
+    margin: 2px;
+    font-size: .8em;
+}
+
+.entrada-menor{
+    width: 25px;
+    text-align: center;
+}
+
+.pericia{
+    width: 25px;
+    text-align: center;
+
+}
+
+.pontos{
+    
+    margin-bottom: 10px;
+    
+
+}
+.pontos > h2 {
+    display: inline-block;
+}
+.pontos > div {
+    display: inline-block;    
+}
+.pontos small {
+    font: normal normal .7em serif;
+    display: block;
+}
+.pontos input {
+    margin-top: 2px;
+    margin-right: 7px;
+    padding-bottom: 3px;
+    
+}
+.pontos strong {
+    font: normal bolder 1.5em serif;
+}
+
+.pericia{
+    content: initial 0;
 }
