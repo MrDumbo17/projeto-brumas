@@ -7,7 +7,7 @@
     <title>Brumas-Ficha Genérica</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="carregar()">
     <header>
         <section id="header-p">
             <h1 id="head-h1">Ficha Genérica - versão 1.0.3</h1>
@@ -36,7 +36,7 @@
         
     </header>
     <main>
-        <div>
+        <div id="teste">
            <div class="pontos"><h2>Combate:</h2> <div ><small>Pnts.</small> <input type="number" name="comb" id="comb" class="entrada-menor" value="-2" min="-3" max="1"></div><div id="comb-t"><small>Total</small> <strong>-2</strong></div></div>
            <div>
             <p>[COR]Luta: + <input type="number" name="luta" id="luta" class="pericia"></p>
@@ -90,7 +90,7 @@
              <p>[ESP] Motivar/Liderar: + <input type="number" name="moti" id="moti" class="pericia"></p>
             </div>
         </div>
-        <div>
+        <div >
             <div class="pontos"><h2>Oculto:</h2> <div ><small>Pnts.</small> <input type="number" name="ocul" id="ocul" class="entrada-menor" value="-2" min="-3" max="1"></div><div id="comb-t"><small>Total</small> <strong>-2</strong></div></div>
             <div>
              <p>[COR] Persistência: + <input type="number" name="pers" id="pers" class="pericia"></p>
@@ -101,5 +101,6 @@
 
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

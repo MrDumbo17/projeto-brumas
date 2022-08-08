@@ -3,6 +3,15 @@
 :root{
 
     --fontP: Verdana, Geneva, Tahoma, sans-serif;
+    /* Cores */
+    --corde: #ca9b18;
+    --cor01: #E1D1EB;
+    --cor02: #A04BD1; 
+    --cor03: #7C3AA3;
+    --cor04: #3E1D52;
+    --cor05: #675F6B;
+
+
 }
 
 input::-webkit-outer-spin-button,   input::-webkit-inner-spin-button {
@@ -16,22 +25,25 @@ input::-webkit-outer-spin-button,   input::-webkit-inner-spin-button {
 
 
 body {
-    
-    background-color: lightgrey;
+    color: var(--cor04);
+    background-color: var(--cor03);
 }
 
 input{
     font: bold 1em san-serife;
-    color: white;
-    background-color: gray;
+    color: var(--cor04);
+    background-color: var(--cor01);
 }
 abbr{
     text-decoration: none;
+    columns: 06;
 }
+
 /* Cabeçario de Apresentação */
 #header-p {
     margin: 10px;
     text-align: center;
+    color: var(--cor01);
 }
 
 #head-disc {
@@ -40,11 +52,17 @@ abbr{
 
 }
 
+#head-disc > a {
+    
+    color: #ca9b18;
+
+}
+
 /* Cabeçario parte 2*/
 #head1 {
     width: 600px;
     margin: auto;
-    background-color: white;
+    background-color: var(--cor01);
     text-align: center;
     border-radius: 20px 20px 0px 0px;
     padding-top: 15px;
@@ -106,7 +124,7 @@ abbr{
 main{
     width: 600px;
     margin: auto;
-    background-color: white;
+    background-color: var(--cor01);
     text-align: justify;
     border-radius: 0px 0px 20px 20px;
 }
@@ -158,6 +176,7 @@ main > div {
 }
 .pontos strong {
     font: normal bolder 1.5em serif;
+    color: var(--corde);
 }
 
 .pericia{
