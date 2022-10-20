@@ -16,17 +16,17 @@
         </section>
         <section id="head1">
             <div id="h-nome">
-                <p>
+                <p style="display: inline;">
                     Nome: <input type="text">
                 </p>
-                
+                <button onclick="window.print()" id="imp-b"><img src="imprimir.png" alt="imprimir"id="imp-i" ></button>
             </div>
             <div id="h-status">
                 <p class="leg" ><small></small></p>
                 <p>
-                    <abbr title="Corpo">COR:</abbr> <input type="number" value="0" min="0" max="3" class="entrada-menor" >  
-                    <abbr title="Mente/Dextreza">MEN/DEX:</abbr> <input type="number" value="0" min="0" max="3" class="entrada-menor" >  
-                    <abbr title="Espirito">ESP:</abbr> <input type="number" value="0" min="0" max="3" class="entrada-menor" >
+                    <abbr title="Corpo">COR:</abbr> <input type="number" value="0" min="0" max="3" class="entrada-menor" id="inp-cor" >  
+                    <abbr title="Mente/Destreza">MEN/DEX:</abbr> <input type="number" value="0" min="0" max="3" class="entrada-menor" id="inp-md">  
+                    <abbr title="Espirito">ESP:</abbr> <input type="number" value="0" min="0" max="3" class="entrada-menor" id="inp-esp" >
                     
                     <abbr title="Divida 5 pontos entre os três atrubutos, min 0, max 3.">&quest;</abbr>
                 </p>
@@ -39,8 +39,8 @@
         
     </header>
     <main>
-        <div id="teste">
-           <div class="pontos"><h2>Combate:</h2> <div ><small>Pnts.</small> <input type="number" name="comb" id="comb" class="entrada-menor" value="0" min="-3" max="1"></div><div id="comb-t"><small>Total</small> <strong>-2</strong></div></div>
+        <div id="combate">
+           <div class="pontos"><h2>Combate:</h2> <div ><small>Pnts.</small> <input type="number" name="comb" id="comb" class="ponto-per" value="0" min="-1" max="3"></div><div id="comb-t"><small>Total</small> <strong class="str-pontoper">-2</strong></div> <abbr title="?"><strong class="abbr-per">?</strong></abbr> </div>
            <div>
             <p>[COR]Luta: + <input type="number" name="luta" id="luta" class="pericia"></p>
             <p>[COR] Bloqueio/Escudo: + <input type="number" name="bloq" id="bloq" class="pericia"></p>
@@ -54,8 +54,8 @@
            
 
         </div>
-        <div >
-            <div class="pontos"><h2>Movimento:</h2> <div ><small>Pnts.</small> <input type="number" name="mov" id="mov" class="entrada-menor" value="0" min="-3" max="1"></div><div id="comb-t"><small>Total</small> <strong>-2</strong></div></div>
+        <div id="movimento">
+            <div class="pontos"><h2>Movimento:</h2> <div ><small>Pnts.</small> <input type="number" name="mov" id="mov" class="ponto-per" value="0" min="-1" max="3"></div><div id="comb-t"><small>Total</small> <strong class="str-pontoper">-2</strong></div> <abbr title="?"><strong class="abbr-per">?</strong></abbr> </div>
            <div>
             <p>[COR]Escalada: + <input type="number" name="esca" id="esca" class="pericia"></p>
             <p>[COR] Natação: + <input type="number" name="nat" id="nat" class="pericia"></p>
@@ -67,8 +67,8 @@
             <p>[ESP] Direção Intuitiva: + <input type="number" name="direc" id="direc" class="pericia"></p>
            </div>
         </div>
-        <div >
-            <div class="pontos"><h2>Sobrevivência:</h2> <div ><small>Pnts.</small> <input type="number" name="sob" id="sob" class="entrada-menor" value="0" min="-3" max="1"></div><div id="comb-t"><small>Total</small> <strong>-2</strong></div></div>
+        <div id="sobrevivencia">
+            <div class="pontos"><h2>Sobrevivência:</h2> <div ><small>Pnts.</small> <input type="number" name="sob" id="sob" class="ponto-per" value="0" min="-1" max="3"></div><div id="comb-t"><small>Total</small> <strong class="str-pontoper">-2</strong></div> <abbr title="?"><strong class="abbr-per">?</strong></abbr> </div>
             <div>
              <p>[MEN/DEX] Caçar: + <input type="number" name="caçar" id="caçar" class="pericia"></p>
              <p>[MEN/DEX] Localizar: + <input type="number" name="loc" id="loc" class="pericia"></p>
@@ -80,8 +80,8 @@
              <p>[ESP] Primeiros Socorros: + <input type="number" name="help" id="help" class="pericia"></p>
             </div>
         </div>
-        <div >
-            <div class="pontos"><h2>Social:</h2> <div ><small>Pnts.</small> <input type="number" name="social" id="social" class="entrada-menor" value="0" min="-3" max="1"></div><div id="comb-t"><small>Total</small> <strong>-2</strong></div></div>
+        <div id="social" >
+            <div class="pontos"><h2>Social:</h2> <div ><small>Pnts.</small> <input type="number" name="social" id="social" class="ponto-per" value="0" min="-1" max="3"></div><div id="comb-t"><small>Total</small> <strong class="str-pontoper">-2</strong></div> <abbr title="?"><strong class="abbr-per">?</strong></abbr> </div>
             <div>
              <p>[COR] Intimidação Fisica: + <input type="number" name="intimf" id="intf" class="pericia"></p>
              <p>[MEN/DEX] Intimidação Mental: + <input type="number" name="intm" id="intm" class="pericia"></p>
@@ -93,8 +93,8 @@
              <p>[ESP] Motivar/Liderar: + <input type="number" name="moti" id="moti" class="pericia"></p>
             </div>
         </div>
-        <div >
-            <div class="pontos"><h2>Oculto:</h2> <div ><small>Pnts.</small> <input type="number" name="ocul" id="ocul" class="entrada-menor" value="0" min="-3" max="1"></div><div id="comb-t"><small>Total</small> <strong>-2</strong></div></div>
+        <div id="oculto">
+            <div class="pontos"><h2>Oculto:</h2> <div ><small>Pnts.</small> <input type="number" name="ocul" id="ocul" class="ponto-per" value="0" min="-1" max="3"></div><div id="comb-t"><small>Total</small> <strong class="str-pontoper">-2</strong></div> <abbr title="?"><strong class="abbr-per">?</strong></abbr> </div>
             <div>
              <p>[COR] Persistência: + <input type="number" name="pers" id="pers" class="pericia"></p>
              <p>[ESP] Vontade: + <input type="number" name="von" id="von" class="pericia"></p>
@@ -103,6 +103,7 @@
             </div>
 
         </div>
+        
     </main>
     <script src="script.js"></script>
 </body>

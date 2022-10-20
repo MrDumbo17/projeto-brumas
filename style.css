@@ -67,6 +67,18 @@ abbr{
     padding-top: 15px;
 
 }
+#imp-b{
+    width: 24px;
+    padding: 0px;
+    margin: 0px 0px 0px 90px;
+    background-color: var(--cor01);
+    border: 0;
+
+}
+#imp-i{
+
+    width: 20px;
+}
 
 /* Cabeçario nome*/
 #h-nome > p {
@@ -75,7 +87,7 @@ abbr{
     
 }
 #h-nome input {
-    width: 250px;
+    width: 249px;
 }
 /* Cabeçario Status*/
 #h-status abbr {
@@ -120,6 +132,7 @@ abbr{
 
 }
 
+
 main{
     width: 600px;
     margin: auto;
@@ -148,6 +161,14 @@ main > div {
 .pericia{
     width: 25px;
     text-align: center;
+    
+
+}
+
+.ponto-per {
+    width: 25px;
+    text-align: center;
+    
 
 }
 
@@ -173,11 +194,8 @@ main > div {
     padding-bottom: 3px;
     
 }
-.pontos strong {
+.str-pontoper {
     font: normal bolder 1.5em serif;
     color: var(--corde);
 }
 
-.pericia{
-    content: initial 0;
-}
