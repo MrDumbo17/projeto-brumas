@@ -80,3 +80,26 @@ function altper(x = 0){
 
     document.querySelectorAll(`#${childs[x].id} .pericia`).forEach((set) => set.setAttribute('max' , Math.abs(parseInt(inp_pontoper[x].value)-6)))
 }
+
+function save(){
+    localStorage.setItem("name", allinp(0).value);
+    localStorage.setItem("inp-cor", allinp(1).value);
+    localStorage.setItem("inp-md", allinp(2).value);
+    localStorage.setItem("inp-dex", allinp(3).value);
+}
+function repor() {
+    allinp(0).value = localStorage.getItem("name")
+    allinp(1).value = localStorage.getItem("inp-cor")
+    allinp(2).value = localStorage.getItem("ipn-md")
+    allinp(3).value = localStorage.getItem("inp-dex")
+}
+
+function ShowLength()
+{
+alert("No of items in local storage is " + localStorage.length);
+}
+function ClearStorage()
+{
+localStorage.clear();
+alert("No of items in local storage is " + localStorage.length);
+}
